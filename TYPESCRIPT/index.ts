@@ -37,3 +37,50 @@ let emp:Emp={
         return this.ename;
     }
 }
+interface Emp2 {
+    id: number;
+    ename: string;
+    salary: number;
+    dep: string;
+    getName(): string;
+}
+
+let emp2: Emp2 = {
+    id: 2,
+    ename: "Ranjan",
+    salary: 120000,
+    dep: "HR",
+    getName(): string {
+        return this.ename;
+    }
+};
+function empname(emp:Emp):string{
+    return emp.getName();
+}
+
+empname(emp);
+
+
+//array of object
+
+let employee:Emp[]=[emp,emp2];
+
+//
+interface User{
+    id:number,
+    email:string,
+    password:string,
+}
+
+let users:User2[]=[
+    {
+        id:1,
+        email:"abc123@gmail.com",
+        password:"1234"
+    },
+    {
+        id:2,
+        email:"srj123@gmail.com",
+        password:"1234"
+    }
+]
