@@ -84,3 +84,10 @@ let users:User2[]=[
         password:"1234"
     }
 ]
+//or
+
+let some:number | string;
+
+let arrr2:number[] | string[] = [1,2,3,4,5];
+
+let arr3:(number|string)[]=[1,2,3,4,"soubhagya","ranjan","jena"];
