@@ -34,12 +34,12 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  let [todos,setTodos]=useState([{id:"1",title:"Todo 1",description:"REACT + VITE"}])
+  let [todo,setTodo]=useState([id:"1",title:"Todo 1",description:"Description 1"])
   return (
     <div>
       <h1>Todo application </h1>
       <TodoInput></TodoInput>
-      <TodoList todos={todos}></TodoList>
+      <TodoList></TodoList>
     </div>
   )
 }
@@ -58,7 +58,7 @@ function TodoList(props){
   return(
     <div>
     <ul>
-    {todos.map((todo)=>{
+    {Todo.map((todo)=>{
 return <TodoComponent key={todo.id} title={todo.title} description={todo.description} />
     })}
     </ul>
